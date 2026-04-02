@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 198, 198);
+    /* font-family:; */
+    color:rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 60px;
+    
+}
+p {
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 46px;
+    color: rgb(91, 91, 199);
+}
+h2:hover {
+    color: black;
+}
+.skills-grid {
+    display: grid;
+    font-size: 26px;
+    grid-template-columns: repeat(autofit,minmax( 500px ,3fr));
+    /* Auto-fit se jitna space hoga utne columns ban jayenge, minmax se har column ka minimum size 150px hoga aur maximum size available space ke hisab se adjust ho jayega */
+    gap: 20px;
+    /* Grid items ke darmiyan fasla */
+    padding: 20px;
+    margin: 30px;
+    list-style-type: square; /* Purana topic yaad hai na? */
+}
+
+.grid-container1 {
+background-color: rgb(114, 95, 32);
+list-style: none;
+font-size: 30px;
+margin: 10px 50px;
+}
+.grid-container1 :hover {
+    background-color: rgb(148, 130, 70);;
+    transform: translateY(-20px)
+}
+.grid-container2 {
+background-color:darkolivegreen;
+list-style: none;
+font-size: 30px;
+margin: 10px 50px;
+}
+.grid-container2 :hover {
+    background-color: rgb(138, 170, 81);
+    transform: translateY(-10px)
+}
+.grid-container3 {
+background-color:rgb(139, 52, 11);
+list-style: none;
+font-size: 30px;
+margin: 10px 50px;
+}
+.grid-container3 :hover {
+    background-color: rgb(179, 107, 59);
+    transform: translateY(-10px)
+}

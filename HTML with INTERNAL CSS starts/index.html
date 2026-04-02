@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <!--Internal CSS starts from here-->
+    <style>
+        body {
+            background-color: rgb(236, 229, 229);
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+        /* Ye dot isliye aya hai ke iske html mai class ka use hua hai */
+        .my-table {
+            padding: 20px;
+            margin: 30px;
+        }
+        /* Input Focus:Jab user kisi text box mein click kare (Type karne ke liye), to uska border color badal jaye: */
+        input:focus , textarea:focus {
+            outline: none;
+            border: 2px solid green;
+        }
+        button,
+        input[type="submit"] {
+            border-radius: 10px;
+            background-color: rgb(247, 175, 82);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        /* Button Hover: */
+        input[type="submit"]:hover {
+            background-color: rgb(212, 141, 54);
+            transform: scale(1.1);   /* Button thora sa bara ho jayega */
+            transition: 0.2s;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;   /* Center mein karne ke liye */
+            gap: 20px;  /* Links ke darmiyan fasla */
+        }
+        .social-links a {
+            text-decoration: none;  /* Underline khatam karne ke liye */
+            color: blanchedalmond;
+            font-weight: bold;
+        }
+        /* Link Hover: */
+        .social-links a:hover {
+            color: seagreen;  /* Mouse lane par color seagreen ho jaye */
+            text-decoration: underline;   /* Underline wapas aa jaye */
+            transition: 0.3s;    /* Transition se color smoothly badlega */
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header section-->
+    <h1>Muhammad Yousuf Jaffar</h1>
+    <h3>Future Developer</h3>
+    <!--About section-->
+    <h2>About me</h2>
+    <section>Hi! It's me Muhammad Yousuf Jaffar, an ISLAMIC SCHOLAR,an Excel expert and a Web Developer. i have
+        completeed A.D.C B.Com and dars e nizami an i have done 2 jobs at a different place, my first job was at H.M
+        SAYA where i was an Assistant Acoountant. i worked ther for 6 mont after i left from there because i want more
+        experience so i moved to my Father's cousins office where i worked for one year and i am still there on today's
+        date 01-03-2026. i am also trying to move from there because i want experience and growth and there is no growth
+        for me, so now i am searching for a job at SOFTWARE HOUSE where i'll get experience and growth also . so that's
+        why i am learning Modwrn web and app development course from saylani and also practcing from my own.</section>
+    <!--Skills section-->
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Excel</li>
+        <li>MSWord</li>
+        <li>PowerPoint</li>
+        <li>Sales</li>
+    </ul>
+    <!--Table section-->
+    <h3>My Education</h3>
+    <table border="1" class="my-table">
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Dars e Nizami</td>
+            <td>Noor e Hamza Islamic College</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>A.D.C B.Com</td>
+            <td>Karachi University</td>
+            <td>2025</td>
+        </tr>
+    </table>
+    <!--Form section-->
+    <h3>Contact Form</h3>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name here">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter you email here">
+        <br>
+        <textarea name="message" id="message" placeholder="Enter your message here"></textarea>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <!--Footer section-->
+    <footer>
+        <p>Copy Rights. 2026 Muhammad Yousuf Jaffar. All Rights Reseved. </p>
+        <div class="social-links">
+        <a href="facebook.com">Facebook</a>
+        <a href="Instagram.com">Instagram</a>
+        <a href="Linkedin.com">Linkedin</a>
+        <a href="Github.com">Github</a>
+        <a href="Twitter.com">Twitter</a>
+        <a href="Threads.com">Threads</a>
+        </div>
+    </footer>
+</body>
+
+</html>

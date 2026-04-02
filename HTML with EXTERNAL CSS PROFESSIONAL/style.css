@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 229, 229);
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: sticky;      /* Screen ke top par chipka rahega */
+    top: 0;
+    z-index: 1000;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 14px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ye dot isliye aya hai ke iske html mai class ka use hua hai */
+.my-table {
+    padding: 20px;
+    margin: 30px;
+}
+.table-container {
+    overflow-x:auto;   /* Agar table bada ho to scrollbar aa jaye */
+    width: 100%;
+}
+
+/* Input Focus:Jab user kisi text box mein click kare (Type karne ke liye), to uska border color badal jaye: */
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid green;
+}
+
+button,
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: rgb(247, 175, 82);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button Hover: */
+input[type="submit"]:hover {
+    background-color: rgb(212, 141, 54);
+    transform: scale(1.1);
+    /* Button thora sa bara ho jayega */
+    transition: 0.2s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    /* Center mein karne ke liye */
+    gap: 20px;
+    /* Links ke darmiyan fasla */
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-links a {
+    text-decoration: none;
+    /* Underline khatam karne ke liye */
+    color: rgb(168, 189, 49);
+    font-weight: bold;
+}
+
+/* Link Hover: */
+.social-links a:hover {
+    color: seagreen;
+    /* Mouse lane par color seagreen ho jaye */
+    text-decoration: underline;
+    /* Underline wapas aa jaye */
+    transition: 0.3s;
+    /* Transition se color smoothly badlega */
+}
+
+.container {
+    max-width: 900px;
+    /* Page ko bohot zyada phailne se rokega */
+    margin: 0 auto;
+    /* Page ko screen ke bilkul center mein le ayega */
+    background-color: white;
+    /* Gray background par white box acha lagega */
+    padding: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    /* Thori si shadow side par */
+    border-radius: 15px;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 barabar ke columns */
+    gap: 10px;
+    list-style-type: square;
+    /* Purana topic yaad hai na? */
+}
+
+.skills-grid li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    list-style: none;   /* Bullets hata diye */
+    border-left: 5px solid green;       /* Side par ek green line */
+}
+
+.form-container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.footer-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+/* CSS Animations (Website mein Jaan dalna) */
+@keyframes fadeIn {
+    From {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries iska use RESPONSIVE banane kai liye hai */
+
+/* Jab screen 600px se choti ho (Mobile) */
+@media (max-width:600px) {
+    .container {
+        width: 95%;
+        /* Mobile par box poori screen cover karega */
+        padding: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        /* Links aik ke niche aik aa jayenge */
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        /* Heading thori choti ho jaye */
+    }
+}
